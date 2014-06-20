@@ -30,7 +30,7 @@ class newrelic::params {
       $newrelic_service_name  = 'newrelic-sysmond'
       $newrelic_php_package   = 'newrelic-php5'
       $newrelic_php_service   = 'newrelic-daemon'
-      $newrelic_php_conf_dir  = '/etc/php5/conf.d'
+      $newrelic_php_conf_dir  = '/etc/php5/apache2/conf.d'
       apt::source { 'newrelic':
         location    => 'http://apt.newrelic.com/debian/',
         repos       => 'newrelic non-free',
